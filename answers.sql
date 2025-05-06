@@ -24,13 +24,13 @@ SELECT * FROM ProductDetail_1NF;
 
 -- QUESTION 2
     
-1.	Create the Orders table:
+-- Create the Orders table:
 CREATE TABLE Orders (
     OrderID INT PRIMARY KEY,
     CustomerName VARCHAR(255)
 );
 
-2.	Create the OrderDetails table:
+-- Create the OrderDetails table:
 CREATE TABLE OrderDetails (
     OrderID INT,
     Product VARCHAR(255),
@@ -39,13 +39,13 @@ CREATE TABLE OrderDetails (
     FOREIGN KEY (OrderID) REFERENCES Orders(OrderID)
 );
 
-3.	Insert data into the Orders table:
+-- Insert data into the Orders table:
 INSERT INTO Orders (OrderID, CustomerName) VALUES
 (101, 'John Doe'),
 (102, 'Jane Smith'),
 (103, 'Emily Clark');
 
-4.	Insert data into the OrderDetails table:
+-- Insert data into the OrderDetails table:
 INSERT INTO OrderDetails (OrderID, Product, Quantity) VALUES
 (101, 'Laptop', 2),
 (101, 'Mouse', 1),
