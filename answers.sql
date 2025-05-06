@@ -1,3 +1,5 @@
+-- QUESTION 1
+    
 -- Create a new table to store the normalized data
 CREATE TABLE ProductDetail_1NF (
     OrderID INT,
@@ -20,7 +22,8 @@ WHERE TRIM(SUBSTRING_INDEX(SUBSTRING_INDEX(Products, ',', n), ',', -1)) <> '';
 -- Verify the transformation
 SELECT * FROM ProductDetail_1NF;
 
-QUESTION 2
+-- QUESTION 2
+    
 1.	Create the Orders table:
 CREATE TABLE Orders (
     OrderID INT PRIMARY KEY,
